@@ -8,10 +8,10 @@ export const NavBarrr = () => {
         <div className="navComponent">
             <Nav justify variant="tabs" defaultActiveKey="/home">
                 <Nav>
-                    <img src="./img/logo192.png" alt="" width="50" height="40"></img>
+                    <img className="navBarImg" src="./img/logo192.png" alt="" width="55" height="45"></img>
                 </Nav>
                 <Nav.Item className="navItem">
-                    <Nav.Link href="/home">Home</Nav.Link>
+                    <Nav.Link className="navLink" href="/home">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="navItem">
                     <Nav.Link eventKey="link-1">Nosotros</Nav.Link>

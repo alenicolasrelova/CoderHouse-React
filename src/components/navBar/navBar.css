@@ -1,12 +1,30 @@
 .navComponent{
-    padding: 10px;
-    position: relative;
-    border: none;
-    outline:none;
+    padding-top: 8px;
+    transition: all 2s linear;  
+    animation: movie 5s infinite;  
+    
+}
+.navItem:hover{
+    background-color: rgb(101, 202, 202);
+    transition: all 0.5s linear;
+    font-size: 16.3px;
+    transform: perspective(400px) rotateY(20deg);
     
 }
 
-.navItem:hover{
-  background-color: bisque;
-  font-size: 16.5px;
+
+.navBarImg:hover{
+    -webkit-transform: rotate(360deg) scale(12.0);
+    transform:scale(1.6) rotate(360deg);
+    
+}
+.navBarImg{
+    overflow:hidden;
+}
+@keyframes movie {
+    0% { top: 0px; left: 0px; background-color: rgb(247, 210, 210);}
+    25% { top: 0px; left: 100px; background-color: rgb(200, 200, 245);}
+    50% { top: 100px; left: 100px; background-color: rgb(235, 235, 182);}
+    75% { top: 100px; left: 0px; background-color: rgb(191, 240, 191);}
+    100% { top: 0px; left: 0px; background-color: rgb(226, 160, 160);}
 }
