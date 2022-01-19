@@ -6,19 +6,22 @@ import "./navBar.css";
 export const NavBarrr = () => {
     return (
         <div className="navComponent">
-            <Nav  justify variant="tabs" defaultActiveKey="/home">
-                <Nav.Item>
+            <Nav justify variant="tabs" defaultActiveKey="/home">
+                <Nav>
+                    <img src="./img/logo192.png" alt="" width="50" height="40"></img>
+                </Nav>
+                <Nav.Item className="navItem">
                     <Nav.Link href="/home">Home</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="link-1">Sobre Mi</Nav.Link>
+                <Nav.Item className="navItem">
+                    <Nav.Link eventKey="link-1">Nosotros</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                <Nav.Item className="navItem">
                     <Nav.Link eventKey="link-2">Contacto</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                <Nav.Item className="navItem">
                     <Nav.Link eventKey="disabled" disabled>
-                        No disponible
+                        Proximamente WhatsApp
                     </Nav.Link>
                 </Nav.Item>
             </Nav>

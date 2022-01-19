@@ -1,58 +1,12 @@
 .navComponent{
     padding: 10px;
     position: relative;
-  overflow: hidden;
+    border: none;
+    outline:none;
+    
 }
 
-.navComponent ::before,
-.navComponent ::after {
-    position: absolute;
-    left: 0;
-    width: 100%;
+.navItem:hover{
+  background-color: bisque;
+  font-size: 16.5px;
 }
-
-.navComponent Nav.link::before{
-    content: ’’;
-  top: 50%;
-  transform: translate(-101%, -50%);
-  height: 50%;
-  z-index: 1;
-  background: var(--text-color);
-}
-
-.navComponent Nav.link::after{
-    content: attr(data-icon);
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: var(--text-color);
-  opacity: 0;
-}
-
-.navComponent Nav.link {
-    transition: color 0s 0.25s var(--timing-function);
-}
-
-.navComponent Nav.link::before {
-    transition: transform 0.5s var(--timing-function);
-  }
-  
-  .navComponent Nav.link::after {
-    transition: opacity 0s 0.25s var(--timing-function);
-  }
-  
-  .navComponent Nav.link:hover {
-    color: transparent;
-  }
-  
-  .navComponent Nav.link:hover::before {
-    transform: translate(101%, -50%);
-  }
-  
-  .navComponent Nav.link:hover::after {
-    opacity: 1;
-  }
