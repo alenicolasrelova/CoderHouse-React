@@ -1,11 +1,12 @@
-
 import { Nav } from "react-bootstrap";
 import React from "react";
 import "./navBar.css";
+import CartIcon from "../icon/CartIcon";
 
 export const NavBarrr = () => {
     return (
         <div className="navComponent">
+            <CartIcon />
             <Nav justify variant="tabs" defaultActiveKey="/home">
                 <Nav>
                     <img className="navBarImg" src="./img/logo192.png" alt="" width="55" height="45"></img>

@@ -2,7 +2,7 @@ import './App.css';
 import { NavBarrr } from "./components/navBar/navBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ClassComponent } from './components/class-component/ClassComponent';
-import functionalComponente from './components/function-component/functionalComponente';
+import FuncionalComponente from './components/function-Component/FuncionalComponente';
 
 
 const age = 18;
@@ -11,7 +11,8 @@ function App() {
     <div className="App">
       <NavBarrr />
       <ClassComponent age={age} name="alejandro"/>
-      <functionalComponente />
+      <hr />
+      <FuncionalComponente age={age} name="alejandro"/>
     </div>
   );
 }
