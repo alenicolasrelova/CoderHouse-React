@@ -1,10 +1,10 @@
 import React from 'react';
-import logotipo from "./nombreTienda.png";
+import cartSvg from './logo.svg';
+import './CartIcon.css';
+
 const CartIcon = () => {
   return (
-  <div>
-    <img src="logotipo"></img>
-  </div>
+    <img src={cartSvg} alt="CartSvg" className="icono"></img>
   );
 };
 

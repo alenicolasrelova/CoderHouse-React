@@ -20,7 +20,19 @@
 }
 .navBarImg{
     overflow:hidden;
+    animation: logoNavBarImg infinite 5s linear;
 }
+
+@keyframes logoNavBarImg {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  
+  }
+
 @keyframes movie {
     0% { top: 0px; left: 0px; background-color: rgb(247, 210, 210);}
     25% { top: 0px; left: 100px; background-color: rgb(200, 200, 245);}

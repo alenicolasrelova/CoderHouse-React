@@ -12,7 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.imagenNombreTienda{
+  height:150px;
+  width:2000px ;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,10 +39,4 @@
     transform: rotate(360deg);
   }
 
-}
-.proximamente{
-  font-size: large;
-}
-.proximamente:hover{
-  font-size: x-large;
 }
