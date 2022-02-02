@@ -6,6 +6,7 @@ import FuncionalComponente from './components/function-Component/FuncionalCompon
 import ItemListContainer from './components/item-list-container/ItemListContainer';
 import ComponentChildren from './components/component-children/ComponentChildren';
 import nombreTienda from './img/nombreTienda.png';
+import CuentaClicks from './components/contador-class/Contador';
 
 const age = 18;
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <img src={nombreTienda} alt="Nombre Tienda" className="imagenNombreTienda"></img>
       <NavBarrr />
+      <CuentaClicks />
       <ClassComponent age={age} name="alejandro"/>
       <hr />
       <FuncionalComponente age={age} name="alejandro"/>
